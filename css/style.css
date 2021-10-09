@@ -172,7 +172,7 @@
 
 /* Footer Section */
 
-#footer{
+footer{
     background-color: var(--very-dark-cyan);
     color: var(--very-pale-cyan);
     padding: 25px 15px;
@@ -228,6 +228,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.media-icons ul{
+    display: flex;
+   list-style: none;
+   justify-content: center;
+   margin-top: 45px;
+}
+
 .media-icons p{
     font-size: 11.13px;
     font-weight: 400;
@@ -247,7 +254,7 @@ i{
 
 /* ----- Desktop Flow ------- */
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1366px) {
 
     /* Header Section */
     
@@ -377,7 +384,7 @@ i{
 
     /* Footer Section */
 
-    #footer{
+    footer{
         height: auto;
         align-content: center;
         font-size: 14px;
@@ -407,21 +414,18 @@ i{
         height: 24px;
     }
 
-
-    .links{
-       display: flex;
-       flex-direction: row; 
-    }
-
-    .two{
-        align-self: center;
-    }
-
-    .one{
+    .link-list{
+        column-count: 2;
+        column-gap: 150px;
         position: relative;
-        top: -20px;
-        margin-right: 175px;
+        top: -70px;
     }
+
+    .link-list li{
+        display: block;
+        margin-bottom: 10px;
+    }
+
 
     .link-list a:hover{
         text-decoration: underline;
@@ -432,6 +436,8 @@ i{
         text-align: left;
     }
 
+    
+
     i:hover{
       color: var(--pink);  
       border-color: var(--pink);
@@ -440,6 +446,10 @@ i{
     .facebook, .twitter, .instagram{
         position: relative;
         top: -75px;
+    }
+
+    button{
+        cursor: pointer;
     }
 
 }
